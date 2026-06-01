@@ -17,12 +17,11 @@ const LatestWork = () => {
         <div className='flex flex-col items-center gap-8 py-11.5'>
             <h3 className='font-semibold text-[20px]'>Latest Work</h3>
             <div className='grid grid-cols-3 gap-8'>
-                <LatestElements />
-                <LatestElements />
-                <LatestElements />
-                <LatestElements />
-                <LatestElements />
-                <LatestElements />
+
+
+                {Array.from({ length: 6 }).map((_, index) => (
+                    <LatestElements key={index} />
+                ))}
             </div>
         </div>
     )

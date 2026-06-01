@@ -40,12 +40,9 @@ const Testimonial = () => {
         <div className='flex flex-col items-center gap-8 py-11.5'>
             <h4>Testimonial</h4>
             <div className='grid grid-cols-3 gap-8'>
-                <Design />
-                <Design />
-                <Design />
-                <Design />
-                <Design />
-                <Design />
+                {Array.from({ length: 6 }).map((_, index) => (
+                    <Design key={index} />
+                ))}
             </div>
         </div>
     )
